@@ -13,7 +13,7 @@ Para el análisis
 
 - Grado de excelencia
 - Superioridad en comparación con otros
-- *ISO8402:* Conjunto de propiedaes y características de un producto o servicio que le confieren su aptitud para satisfacer unas necesidades expresas.
+- *ISO8402:* Conjunto de propiedades y características de un producto o servicio que le confieren su aptitud para satisfacer unas necesidades expresas.
 
 # Calidad en el software
 
