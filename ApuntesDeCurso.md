@@ -9,22 +9,21 @@ Para el análisis
  4. ¿Está de acuerdo con el "método Singapur" para determinar el tiempo de vida útil de un sistema?
  5. ¿A qué se refiere la afirmación "ellos –al contrario de nosotros– son obsesivos en no desarrollar sistemas internamente..."?
 
-#Definición de calidad
+# Definición de calidad
 
--Grado de excelencia
--Superioridad en comparación con otros
--ISO8402: Conjunto de propiedaes y características de un producto o servicio que le confieren su aptitud para satisfacer unas necesidades expresas.
+- Grado de excelencia
+- Superioridad en comparación con otros
+- *ISO8402:* Conjunto de propiedaes y características de un producto o servicio que le confieren su aptitud para satisfacer unas necesidades expresas.
 
-#Calidad en el software
+# Calidad en el software
 
--Factores Externos 
-..* Eficiencia
-..* Robustez
-..* Portabilidad
-..* etc (Mayer)
+- Factores Externos 
+  - Eficiencia
+  - Robustez 
+  - Portabilidad
+  - etc (Mayer)
 
--Factores Internos
-..*Legibilidad de código
-..*Testability
-..*Mantenibilidad
-..*
+- Factores Internos
+  - Legibilidad de código
+  - Testability (Susceptibilidad a ser probado)
+  - Mantenibilidad
