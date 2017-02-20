@@ -27,3 +27,41 @@ Para el análisis
   - Legibilidad de código
   - Testability (Susceptibilidad a ser probado)
   - Mantenibilidad
+
+# Definición de defecto o *pulga* 
+(Patton)
+Un defecto de software ocurre cuando una o más de las siguientes reglas se cumple:
+1. El software *no hace* algo que la especificación dice que *debería hacer*
+2. El software *hace* algo que la especificación dice que *no debería hacer*
+3. El software *hace* algo que la especificación *no menciona*
+4. El software *no hace* algo que la especificación no menciona pero que *debería*
+5. El software es *difícil de entender, difícil de usar o, según la perspectiva del probador, será considerado como incorrecto por parte del usuario final*
+
+# Aseguramiento de la calidad:
+- Esfuerzo **total** para plantear, dirigir y controlar los productos y procesos de manera que los resultados sean de calidad
+- Concepto más amplio que el de pruebas de software
+- En la práctica, para algunas generaciones QA = pruebas de software
+
+# Costos en la calidad
+- Costo de Calidad = Costo de Control + Costo de Fallos en Control
+- Costo de Control = Costo de Prevención + Costo de Evaluación
+**Costo de Prevención:** esfuerzos para *prevenir* defectos: QA, planeación, entrenamiento, etc.
+**Costo de Evaluación** esfuerzos para *detectar* defectos: pruebas, verificación y validación
+- Costo de Fallos en Control = Costo de Fallos Internos + Costo de Fallos Externos
+**Costo de Fallos Internos**: defectos detectados internamente. Implican *retrabajo*
+**Costo de Fallos Externos**: detectados por el cliente o usuario externo: implican costo de servicio, relanzamiento/redistribución, penalizaciones, imagen, etc. 
+
+# Costo relativo de solucionar defectos
+(Barry Boehm)
+| Etapa                  | Costo Relativo |
+|------------------------|----------------|
+| Requerimientos         | 1x             |
+| Diseño                 | 5x             |
+| Codificación           | 10x            |
+| Pruebas Internas       | 20x            |
+| Pruebas de Aceptación  | 50x            |
+| Producción             | >150x          |
+
+
+
+  
