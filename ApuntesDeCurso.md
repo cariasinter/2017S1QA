@@ -38,9 +38,9 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
 5. El software es *difícil de entender, difícil de usar o, según la perspectiva del probador, será considerado como incorrecto por parte del usuario final*
 
 # Aseguramiento de la calidad:
-- Esfuerzo **total** para plantear, dirigir y controlar los productos y procesos de manera que los resultados sean de calidad
+- Esfuerzo **total** para planear, dirigir y controlar los productos y procesos de manera que los resultados sean de calidad
 - Concepto más amplio que el de pruebas de software
-- En la práctica, para algunas generaciones QA = pruebas de software
+- En la práctica, para algunas organizaciones QA = pruebas de software
 
 # Costos en la calidad
 - Costo de Calidad = Costo de Control + Costo de Fallos en Control
@@ -61,6 +61,102 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
 | Pruebas Internas       | 20x            |
 | Pruebas de Aceptación  | 50x            |
 | Producción             | >150x          |
+
+# Control de la calidad
+
+- En productos tradicionales: inspecciones. ¿El producto/servicio cumple con las especificaciones?
+
+- En el software: pruebas de software. 
+
+- (Patton) El objetivo: encontrar defectos (pulgas)
+  - lo antes posible
+  - .. y asegurarse de que sean corregidos.
+  
+- Imposible probar un software completamente
+  - muchas entradas posibles
+  - muchas salidas posibles
+  - muchas rutas dentro del código
+  - subjetividad en:
+    - interpretación de especificaciones
+	- qué es o qué no es una pulga
+	
+# Características de las pruebas
+
+- Requieren tiempo y esfuerzo (entre 20% y 50% de los proyectos)
+
+- Requieren habilidades:
+  - Técnicas
+  - Perseverancia
+  - Persuasión
+  - Diplomacia
+
+- Se integran durante todo el ciclo de vida del desarrollo
+
+- Originan una profesión disciplinada y de características técnicas
+
+# Requerimientos
+
+- Especificación de producto: acuerdo entre el equipo de desarrollo que define el producto que se crea:
+  - ¿Qué es?
+  - ¿Cómo se comporta?
+  - ¿Qué   hace?
+  - ¿Qué no hace?
+  
+- Diferentes grados de formalidad
+  - acuerdo verbal
+  - correos
+  - apuntes
+  - documentos detallados y estandarizados / herramientas automatizadas
+  
+# Roles y Responsabilidades en las Pruebas
+  
+## Desarrolladores
+  - Pruebas unitarias, requiere conocimiento del código
+  - Pruebas de integración, requerimiento conocimiento de requerimientos y de interfaces entre módulos
+  
+## Equipo de Pruebas
+  - Especializado
+  - Conocimiento
+    - Técnicas de pruebas
+	- Errores más comunes
+  - "Visión externa"
+  - Roles dentro del equipo de pruebas: Test Engineer, Senior Test Engineer, Test Lead, Test Architect, Test Manager, etc.
+  
+## Beneficios de QA
+  - Calidad
+  - Competitividad
+  - Reducir costos y riesgos
+  - Incremento de la productividad
+  - Retención de clientes / beneficios de imagen
+  
+
+# Terminología
+  
+## Defecto vs Falla
+  - **Error Humano** puede generar **Defecto**
+  - **Defecto** puede generar **Falla**
+  - **Falla** es manifestación visible de **Defecto**
+  - **Defectos** y **Fallas** se pueden clasificiar
+  - Al ocurrir una **Falla** se requiere identificar cuál es el **Defecto**
+  - **Defectos** requieren **Corrección**
+  
+## Verificación vs. Validación
+
+
+| Fuente         | Verificación / Inspección                                       | Validación                                     |
+|----------------|-----------------------------------------------------|------------------------------------------------|
+| Patton y Otros | ¿Sistema cumple con espec. de requerimientos?       | ¿Sistema cumple con expectativas del cliente?  |
+| Boehm y Otros  | ¿Estamos construyendo el producto correctamente?    | ¿El producto en construcción es el correcto?   |
+|                | Revisiones Estáticas                                | Revisiones Dinámicas                           |
+|                | Aplicado al proceso y los componentes en desarrollo | Aplicado al producto final o parciales         |
+
+### CMM / IEEE 
+
+#### Verificación:
+Evaluar el software para determinar si los productos de una fase satisfacen las condiciones impuestas al inicio de la fase 
+#### Validación: 
+Evaluar el software al final del desarrollo para determinar si satisface los requerimientos 
+
 
 
 
