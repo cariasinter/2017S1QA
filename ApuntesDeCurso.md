@@ -157,6 +157,26 @@ Evaluar el software para determinar si los productos de una fase satisfacen las 
 #### Validación: 
 Evaluar el software al final del desarrollo para determinar si satisface los requerimientos 
 
+## Artículos sobre fracasos de proyectos de software y su relación con los requerimientos y otros factores
+
+*Standish Group's Chaos Report (1995)*
+https://www.projectsmart.co.uk/white-papers/chaos-report.pdf
+- Pag 6: Excesos en términos de costo y tiempo
+- Pag 8. Criterios de éxito
+- Pag 9. Factores de fracaso para proyectos fallidos o afectados (challenged)
+
+*Standish Group 2015 Chaos Report*
+https://www.infoq.com/articles/standish-chaos-2015
+- Gráfico de resulución para todos los proyectos (successful, challenged, failed)
+- Resolución en metodologías ágiles vs. cascada
+- Factores de éxito
+
+*The Non-Existent Software Crisis: Debunking the Chaos Report*
+http://www.drdobbs.com/architecture-and-design/the-non-existent-software-crisis-debunki/240165910
+- Números más positivas, estadísticas según varios paradigmas (lean, agile, iterative, ad hoc, traditional)
+
+
+
 
 
 
