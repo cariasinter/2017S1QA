@@ -17,9 +17,9 @@ Para el análisis
 
 # Calidad en el software
 
-- Factores Externos 
+- Factores Externos
   - Eficiencia
-  - Robustez 
+  - Robustez
   - Portabilidad
   - etc (Mayer)
 
@@ -28,7 +28,7 @@ Para el análisis
   - Testability (Susceptibilidad a ser probado)
   - Mantenibilidad
 
-# Definición de defecto o *pulga* 
+# Definición de defecto o *pulga*
 (Patton)
 Un defecto de software ocurre cuando una o más de las siguientes reglas se cumple:
 1. El software *no hace* algo que la especificación dice que *debería hacer*
@@ -49,7 +49,7 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
 **Costo de Evaluación** esfuerzos para *detectar* defectos: pruebas, verificación y validación
 - Costo de Fallos en Control = Costo de Fallos Internos + Costo de Fallos Externos
 **Costo de Fallos Internos**: defectos detectados internamente. Implican *retrabajo*
-**Costo de Fallos Externos**: detectados por el cliente o usuario externo: implican costo de servicio, relanzamiento/redistribución, penalizaciones, imagen, etc. 
+**Costo de Fallos Externos**: detectados por el cliente o usuario externo: implican costo de servicio, relanzamiento/redistribución, penalizaciones, imagen, etc.
 
 # Costo relativo de solucionar defectos
 (Barry Boehm)
@@ -66,12 +66,12 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
 
 - En productos tradicionales: inspecciones. ¿El producto/servicio cumple con las especificaciones?
 
-- En el software: pruebas de software. 
+- En el software: pruebas de software.
 
 - (Patton) El objetivo: encontrar defectos (pulgas)
   - lo antes posible
   - .. y asegurarse de que sean corregidos.
-  
+
 - Imposible probar un software completamente
   - muchas entradas posibles
   - muchas salidas posibles
@@ -79,7 +79,7 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
   - subjetividad en:
     - interpretación de especificaciones
 	- qué es o qué no es una pulga
-	
+
 # Características de las pruebas
 
 - Requieren tiempo y esfuerzo (entre 20% y 50% de los proyectos)
@@ -101,19 +101,19 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
   - ¿Cómo se comporta?
   - ¿Qué   hace?
   - ¿Qué no hace?
-  
+
 - Diferentes grados de formalidad
   - acuerdo verbal
   - correos
   - apuntes
   - documentos detallados y estandarizados / herramientas automatizadas
-  
+
 # Roles y Responsabilidades en las Pruebas
-  
+
 ## Desarrolladores
   - Pruebas unitarias, requiere conocimiento del código
   - Pruebas de integración, requerimiento conocimiento de requerimientos y de interfaces entre módulos
-  
+
 ## Equipo de Pruebas
   - Especializado
   - Conocimiento
@@ -121,17 +121,17 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
 	- Errores más comunes
   - "Visión externa"
   - Roles dentro del equipo de pruebas: Test Engineer, Senior Test Engineer, Test Lead, Test Architect, Test Manager, etc.
-  
+
 ## Beneficios de QA
   - Calidad
   - Competitividad
   - Reducir costos y riesgos
   - Incremento de la productividad
   - Retención de clientes / beneficios de imagen
-  
+
 
 # Terminología
-  
+
 ## Defecto vs Falla
   - **Error Humano** puede generar **Defecto**
   - **Defecto** puede generar **Falla**
@@ -139,7 +139,7 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
   - **Defectos** y **Fallas** se pueden clasificiar
   - Al ocurrir una **Falla** se requiere identificar cuál es el **Defecto**
   - **Defectos** requieren **Corrección**
-  
+
 ## Verificación vs. Validación
 
 
@@ -150,12 +150,12 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
 |                | Revisiones Estáticas                                | Revisiones Dinámicas                           |
 |                | Aplicado al proceso y los componentes en desarrollo | Aplicado al producto final o parciales         |
 
-### CMM / IEEE 
+### CMM / IEEE
 
 #### Verificación:
-Evaluar el software para determinar si los productos de una fase satisfacen las condiciones impuestas al inicio de la fase 
-#### Validación: 
-Evaluar el software al final del desarrollo para determinar si satisface los requerimientos 
+Evaluar el software para determinar si los productos de una fase satisfacen las condiciones impuestas al inicio de la fase
+#### Validación:
+Evaluar el software al final del desarrollo para determinar si satisface los requerimientos
 
 ## Artículos sobre fracasos de proyectos de software y su relación con los requerimientos y otros factores
 
@@ -176,8 +176,116 @@ http://www.drdobbs.com/architecture-and-design/the-non-existent-software-crisis-
 - Números más positivas, estadísticas según varios paradigmas (lean, agile, iterative, ad hoc, traditional)
 
 
+## Actitudes con respecto a las pruebas de software
 
+### Desarrolladores
+- Presión por producir
+- Orgullo de "nuestro" trabajo
+ -  Lo restante "no es mi culpa"
+- Mostrar las bondades de su obra
 
+### Encargados de pruebas
+- Presión por encontrar Fallos
+ - o por "confirmar" el software
+- Poco conocimiento del sistema o de los detalles técnicos
 
+### Soluciones al conflicto
+- Trabajo en equipo: distintos roles, mismo objetivo
+- Se evalúa al producto, no a la persona
+- Voluntad de mejora: personal y del equipo
 
-  
+## Pruebas dinámicas de Caja Blanca (Material Suplementario)
+
+*Escenario:*
+- Módulo A de nivel 1  depende de módulo B de nivel 2
+- Módulo B depende de módulos E y F de nivel 3
+- Se desea probar módulo B
+
+*Necesidad*: Verificar las llamadas que se pueden hacer a B (por parte de A y otros)
+- Técnica: uso del Driver
+- Definir un conjunto de casos de prueba aceptable
+
+*Necesidad*: Simular el uso que hace B de los módulos E y F
+- Técnica: uso de Stubs/Mocks
+
+### Driver
+- Simula el uso o invocación del módulo a probar
+- Usualmente más sencillo de desarrollar que el stub
+- Se desarrolla a la medida o apoyado por herramientas
+
+### Stub
+- Simplificado, con respecto al módulo real
+- Implica costo de desarrollo
+- Si está excesivamente simplificado (ej. devolver siempre los mismos valores) entonces puede afectar la verificar correcta del módulo que lo usa.
+
+*Tanto los Drivers como los Stubs no necesariamente son código para desechar*
+
+##  Estrategias de Integración de un sistema multinivel
+
+### "Big Bang"
+- No incremental (sin integraciones parciales)
+- Se prueba cada módulo de forma aislada y luego se prueba la combinación de todos los módulos a la vez
+
+*Pros y Contras*
+- :) Permite mucho paralelismo en el desarrollo
+- :( Requiere mucho desarrollo de stubs y drivers
+- :( Difícil detectar orígen del defecto una vez que se hace la integración total
+- No recomendable para sistemas grandes
+
+### Bottom-Up
+- Comenzar por los módulos que no dependen de ningún otro, Continuar hacia arriba
+- Requiere desarrollo de Drivers para pruebas pero no de Stubs
+ - Para probar un módulo, todas sus dependencias deben estar probadas previamente
+- Permite localizar defectos y una sólida integración parcial
+- Puede dificultar la planeación del cronograma y visibilidad del avance
+
+### Top-Down
+- Comenzar por el módulo superior y continuar hacia abajo
+- Requiere de Stubs, pero no de Drivers
+ - Mayor complejidad
+- Facilita la visibilidad del avance
+- Puede afectar el paralelismo
+
+*En la práctica* se usa un esquema híbrido top-down y bottom-up, según la definición de módulos críticos y la planificación del avance
+
+## Diseño de pruebas
+
+Considerar
+- Especificación de requerimientos
+- Técnicas de pruebas funcionales (caja negra
+
+### Determinar Conjunto de Casos de Prueba (CCP) según el enfoque de caja negra
+- Reducir a clases de equivalencia
+- Identificar límites
+- Pruebas de estandarizados
+
+Ejemplo 1:
+
+*CP05*: Dada la precondición de que existe el usuario 'usr' con la contraseña 'password', al ejecutar el procedimiento de prueba PP07 con los datos usuario: usr, contraseña: password:
+- La autenticación debe ser exitosa (correctitud)
+- El usuario debe ser llevado a la pantalla principal (transición correcta de estados)
+
+Ejemplo 2:
+
+*CP06*: Digitar la dirección de la pantalla principal sin haber pasado previamente por la pantalla de autenticación (PP09)
+- No se muestra la pantalla principal (correctitud)
+- El usuario es llevado a la pantalla de login (y/o se muestra un mensaje de error) (transiciones correctas)
+
+### Depurar el CCP según el enfoque de caja blanca
+- Eliminar CPs redundantes
+- Determinar CPs faltantes
+- CPs que manipulan estado interno para forzar condiciones
+- CP adicionales que mejoren la cobertura de código
+
+### Casos de prueba negativos (Test-to-Fail)
+- Utilizar el software de una manera para la cual no fue creado
+
+Ejemplos
+- Entradas de tipo incorrecto
+- Entradas no introducidas
+- Entradas fuera de rango o con valores irreales
+- Uso no esperado de controles de interfaz de usuario
+- Tratar de forzar errores de seguridad
+
+*Resultado del diseño de pruebas:* especificación de casos de prueba y de procedimientos de prueba
+- Siguiendo un formato estructurado (Patton cap 18)
