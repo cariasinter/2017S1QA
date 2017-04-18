@@ -176,25 +176,25 @@ http://www.drdobbs.com/architecture-and-design/the-non-existent-software-crisis-
 - Números más positivas, estadísticas según varios paradigmas (lean, agile, iterative, ad hoc, traditional)
 
 
-## Actitudes con respecto a las pruebas de software
+# Actitudes con respecto a las pruebas de software
 
-### Desarrolladores
+## Desarrolladores
 - Presión por producir
 - Orgullo de "nuestro" trabajo
  -  Lo restante "no es mi culpa"
 - Mostrar las bondades de su obra
 
-### Encargados de pruebas
+## Encargados de pruebas
 - Presión por encontrar Fallos
  - o por "confirmar" el software
 - Poco conocimiento del sistema o de los detalles técnicos
 
-### Soluciones al conflicto
+## Soluciones al conflicto
 - Trabajo en equipo: distintos roles, mismo objetivo
 - Se evalúa al producto, no a la persona
 - Voluntad de mejora: personal y del equipo
 
-## Pruebas dinámicas de Caja Blanca (Material Suplementario)
+# Pruebas dinámicas de Caja Blanca (Material Suplementario)
 
 *Escenario:*
 - Módulo A de nivel 1  depende de módulo B de nivel 2
@@ -208,21 +208,21 @@ http://www.drdobbs.com/architecture-and-design/the-non-existent-software-crisis-
 *Necesidad*: Simular el uso que hace B de los módulos E y F
 - Técnica: uso de Stubs/Mocks
 
-### Driver
+## Driver
 - Simula el uso o invocación del módulo a probar
 - Usualmente más sencillo de desarrollar que el stub
 - Se desarrolla a la medida o apoyado por herramientas
 
-### Stub
+## Stub
 - Simplificado, con respecto al módulo real
 - Implica costo de desarrollo
 - Si está excesivamente simplificado (ej. devolver siempre los mismos valores) entonces puede afectar la verificar correcta del módulo que lo usa.
 
 *Tanto los Drivers como los Stubs no necesariamente son código para desechar*
 
-##  Estrategias de Integración de un sistema multinivel
+#  Estrategias de Integración de un sistema multinivel
 
-### "Big Bang"
+## "Big Bang"
 - No incremental (sin integraciones parciales)
 - Se prueba cada módulo de forma aislada y luego se prueba la combinación de todos los módulos a la vez
 
@@ -232,14 +232,14 @@ http://www.drdobbs.com/architecture-and-design/the-non-existent-software-crisis-
 - :( Difícil detectar orígen del defecto una vez que se hace la integración total
 - No recomendable para sistemas grandes
 
-### Bottom-Up
+## Bottom-Up
 - Comenzar por los módulos que no dependen de ningún otro, Continuar hacia arriba
 - Requiere desarrollo de Drivers para pruebas pero no de Stubs
  - Para probar un módulo, todas sus dependencias deben estar probadas previamente
 - Permite localizar defectos y una sólida integración parcial
 - Puede dificultar la planeación del cronograma y visibilidad del avance
 
-### Top-Down
+## Top-Down
 - Comenzar por el módulo superior y continuar hacia abajo
 - Requiere de Stubs, pero no de Drivers
  - Mayor complejidad
@@ -248,13 +248,13 @@ http://www.drdobbs.com/architecture-and-design/the-non-existent-software-crisis-
 
 *En la práctica* se usa un esquema híbrido top-down y bottom-up, según la definición de módulos críticos y la planificación del avance
 
-## Diseño de pruebas
+# Diseño de pruebas
 
 Considerar
 - Especificación de requerimientos
 - Técnicas de pruebas funcionales (caja negra
 
-### Determinar Conjunto de Casos de Prueba (CCP) según el enfoque de caja negra
+## Determinar Conjunto de Casos de Prueba (CCP) según el enfoque de caja negra
 - Reducir a clases de equivalencia
 - Identificar límites
 - Pruebas de estandarizados
@@ -271,13 +271,13 @@ Ejemplo 2:
 - No se muestra la pantalla principal (correctitud)
 - El usuario es llevado a la pantalla de login (y/o se muestra un mensaje de error) (transiciones correctas)
 
-### Depurar el CCP según el enfoque de caja blanca
+## Depurar el CCP según el enfoque de caja blanca
 - Eliminar CPs redundantes
 - Determinar CPs faltantes
 - CPs que manipulan estado interno para forzar condiciones
 - CP adicionales que mejoren la cobertura de código
 
-### Casos de prueba negativos (Test-to-Fail)
+## Casos de prueba negativos (Test-to-Fail)
 - Utilizar el software de una manera para la cual no fue creado
 
 Ejemplos
@@ -289,3 +289,66 @@ Ejemplos
 
 *Resultado del diseño de pruebas:* especificación de casos de prueba y de procedimientos de prueba
 - Siguiendo un formato estructurado (Patton cap 18)
+
+# Tipos de pruebas
+
+## Pruebas de especificación
+## Pruebas unitarias
+## Pruebas de integración
+- Top down
+- Bototm up
+
+## Pruebas funcionales
+Verifica que una parte del sistema, o el sistema completo, realiza las funciones especificadas en el documento de especificación de requerimientos (ERS)
+
+Se prueban:
+- Funciones individuales
+- Combinaciones o rutas dentro del estado o flujos del sistema (pruebas de estado)
+
+A partir de:
+- Requerimientos
+- Casos de uso
+- Diseño de pruebas
+
+## Pruebas de regresión
+Asegurarnos de que un cambio o nueva funcionalidad no ha descompuesto lo que ya funcionaba
+
+## Pruebas de Rendimiento
+Verificar que el sistema cumpla criterios de rendimiento/desempeño
+
+Tipos:
+- *Pruebas de carga/estrés:* aumentar paulatinamente la carga (usuarios,transacciones,etc) hasta determinar el punto en el que sistema "se rompe ante la carga"
+- *Pruebas de estabilidad (soak testing):* determinar si la aplicación puede soportar una carga esperada por un largo de tiempo. Ej: tratar de detectar fugas de memoria
+- *Pruebas de volumen/picos:* someter el sistema a una carga alta, pero probable, por cortos periodos de tiempo. Ej: cantidad de peticiones/usuarios concurrentes.
+
+## Pruebas de usabilidad
+Verificar facilidad y conveniencia en el uso del software.
+- Pueden realizarse de forma temprana por medio de prototipos.
+
+## Pruebas de recuperación
+Forzar fallo en el software y verificar que la recuperación se lleve a cabo adecuadamente
+
+## Pruebas de seguridad
+Verificar que los mecanismos de protección incorporados al sistema los protejan adecuadamente. "Intentar hackear el sistema"
+
+## Pruebas de confiabilidad
+Verificar la confiabilidad del sistema, cuando existen requerimientos específicos al respecto.
+*Ejemplo:* "uptime de 99.5%" (solamente 3 horas y 40 minutos puede estar el sistema 'offline' al mes)
+- Difícil de verificar
+- Se puede *estimar* a partir de datos previos. Ej: tiempo entre fallas de 20 horas y recuperación de falla en 15 minutos
+
+## Pruebas alfa
+Llevadas a cabo por el cliente o algún stakeholder en un entorno controlado y observado por los desarrolladores
+
+## Pruebas beta
+Llevadas a cabo por usuarios finales en un entorno similar al de producción, sin la presencia constante del desarrollador
+
+## Pruebas de aceptación
+Realizadas por el cliente para aceptar un sistema de software según criterios establecidos (en un contrato).
+Criterios de aceptación:
+- funcionales
+- rendimiento
+- interfaz/usabilidad/adaptabilidad
+- otros
+
+Las pruebas de aceptación pueden originar cambios (considerables) previo al acuerdo de aceptación
