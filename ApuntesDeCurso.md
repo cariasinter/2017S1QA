@@ -53,6 +53,7 @@ Un defecto de software ocurre cuando una o más de las siguientes reglas se cump
 
 # Costo relativo de solucionar defectos
 (Barry Boehm)
+
 | Etapa                  | Costo Relativo |
 |------------------------|----------------|
 | Requerimientos         | 1x             |
@@ -352,3 +353,54 @@ Criterios de aceptación:
 - otros
 
 Las pruebas de aceptación pueden originar cambios (considerables) previo al acuerdo de aceptación
+
+
+# Matriz resumen de tipos de pruebas
+
+
+Referencia: [Test First](http://www.scaledagileframework.com/test-first/)
+
+|                             | Soporte al Desarrollo | Evaluación de la Solución |
+|-----------------------------|-----------------------|---------------------------|
+| **De cara al negocio**      | Q2                    | Q3                        |
+| **De cara a la tecnología** | Q1                    | Q4                        |
+
+De cara al negocio:
+  - Entendibles por el usuario final
+  - Descritas formal o informalmente en lenguajes de negocio
+
+De cara a la tecnología:
+  - Escritas en lenguajes técnicos / de desarrollo
+  - Usadas para validar que el código presente el comportamiento esperado por los desarrolladores
+
+Soporte al desarrollo
+  - Evaluar productos internos / código
+
+Evaluación de la solución
+  - Evaluar el sistema contra los requerimientos del usuario
+
+## Q1: De cara a la tecnología, soporte al desarrollo
+- Pruebas de regresión
+- Pruebas de unidad
+- Pruebas de integración
+
+## Q2: De cara al negocio, soporte al desarrollo
+- Pruebas de especificación
+- Pruebas funcionales
+- Pruebas de usabilidad tempranas (prototipos)
+
+## Q3: De cara al negocio, evaluación de la solución
+- Pruebas de usabilidad sobre el producto
+- Pruebas alfa/beta
+- Pruebas de aceptación
+
+
+## Q4: De cara a la tecnología, evaluación de la solución
+- Pruebas de rendimiento (estrés, estabilidad, volumen)
+- Pruebas de recuperación
+- Pruebas de seguridad
+- Pruebas de confiabilidad
+
+**Automatización** Usualmente presente  en Q1, Q4 y, en la medida de lo posible Q2
+
+**Pruebas manuales** Usualmente presentes en Q3 y, cuando es necesario, Q2
