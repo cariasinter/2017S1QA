@@ -404,3 +404,55 @@ Evaluación de la solución
 **Automatización** Usualmente presente  en Q1, Q4 y, en la medida de lo posible Q2
 
 **Pruebas manuales** Usualmente presentes en Q3 y, cuando es necesario, Q2
+
+# Jerarquía de Automatización de Pruebas
+
+
+| Nivel | Tipos de Pruebas                        | Tipos de Herramientas               | Ejemplos de Herramientas           |
+|-------|-----------------------------------------|-------------------------------------|------------------------------------|
+|0      | Pruebas manuales                        | Apoyo a las pruebas                 | Wiki                               |
+|1      | Pruebas funcionales, UI                 | Herramientas específicas            | Selenium                           |
+|2      | Pruebas de API, Integración, Aceptación | Lenguajes cercanos al usuario (DSL) | Fitnesse, herramientas a la medida |
+|3      | Pruebas unitarias / de componentes      | Mismo lenguaje de la aplicación     | JUnit                              |
+
+- Conforme se baja en la jerarquía la automatización es menos costosa
+- Conforme se sube en la jerarquía la automatización es más costosa
+
+- Conforme se baja en la jerarquía se tiene un mayor retorno sobre la inversión
+- Conforme se sube en la jerarquía se tiene un menor retorno sobre la inversión
+
+- Conforme se baja en la jerarquía la automatización es más estable / robusta
+- Conforme se sube en la jerarquía la automatización es menos estable / robusta
+
+## ¿Quién automatiza?
+Escenario ideal requiere colaboración entre equipo de QA y desarrolladores
+
+## ¿Qué se puede automatizar?
+
+### Pruebas unitarias
+No tiene sentido que sean manuales si queremos detectar problemas de regresión
+
+### Pruebas de APIs / Web Services / Lógica de Negocios
+Capa inferior a Interfaz de usuario
+
+### Pruebas funcionales desde la UI
+- Con lógica de negocios real o stubs
+- Empezar por lo más básico
+
+### Pruebas de rendimiento
+- Pruebas de carga, estabilidad, volumen, por medio de herramientas especializadas
+
+### Integración contínua, builds y deployment
+- Builds/deployment periódicos o disparados con cada cambio efectuado
+- Notificaciones automáticas indicando los resultados y los cambios incorporados
+  - Equipo de QA no tiene que esperar para probar
+  - Desarrolladores reciben retroalimentación temprana de defectos y sugerencias
+- Puebas automatizadas incorporadas al proceso de build
+  - Balance entre automatización vs. tiempo que toma el build
+- Es lo primero que se debe automatizar!
+
+### Otros automatizaciones posibles
+- Inspecciones y comparaciones de archivos de salida, tablas de bases de datos, etc.
+- Tareas repetitivas
+- Generación de código
+- Creación o configuración de los datos de los sistemas, scripts de bases de datos, limpiar datos de pruebas previas, etc.
