@@ -1,0 +1,20 @@
+Delimitación de funcionalidades para la etapa 3:
+
+- Autenticación en el sistema
+- Registro de usuarios
+- Asociar/desasociar usuarios a gimnasios
+- Publicaciónes
+- Agregar rutina
+- Editar rutina
+- Eliminar rutina
+
+Flujo a automatizar para pruebas funcionales automatizadas y pruebas de carga
+
+1- Usuario ingresa en el sistema
+2- Usuario agrea publicacion
+3- Se verifica que la publicación aparezca
+4- Se agrega rutina
+5- Se verifica que la rutina aparezca
+6- Se elimina la misma rutina
+7- Se verifica que la rutina ya no aparezca
+8- Salir del sistema
