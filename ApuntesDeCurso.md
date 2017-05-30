@@ -456,3 +456,52 @@ Capa inferior a Interfaz de usuario
 - Tareas repetitivas
 - Generación de código
 - Creación o configuración de los datos de los sistemas, scripts de bases de datos, limpiar datos de pruebas previas, etc.
+
+## Estrategias para automatizar
+
+Analizar
+ - Requerimientos
+ - Factores críticos de calidad del software
+ - riesgos
+
+¿Dónde ganamos más?
+ - Usualmente pruebas de unidad generan Robustez
+
+¿Dónde "nos duele más"? ¿Dónde es más tedioso el trabajo?
+
+Reconocer el tiempo y esfuerzo requerido
+
+Considerar la jerarquía de automatización de pruebas
+ - Usualmente se procede de abajo hacia arriba
+
+Reconocer pruebas como **producto ingenieril**: requieren diseño cuidadoso para:
+  - minimizar esfuerzos de mantenimiento
+  - minizar duplicaciónn
+  - incorporar en control de configuración
+  - etc.
+
+Considerar la clasificación y organización de muchas (decenas/centenas/miles) pruebas y de sus resultados
+  - visibilidad de pruebas y resultados
+
+## Generación de datos
+
+Evaluar uso de herramientas vs scripts internos
+
+No siempre se requieren datos al nivel de la BD
+ - Uso de stubs para sustituir el acceso a nivel de la BD en las pruebas
+   - Mejora en tiempos de ejecución de pruebas
+
+En caso de que se requieran pruebas utiizando la BD
+ - Escenarios setup/teardown
+ - Evaluar uso de BDs "canónicas"
+ - Considerar que algunas pruebas requieren escenarios muy similares a los de producción
+
+Migraciones de datos también deben probarse
+
+## Criterios para escoger herramientas
+
+- Identificar requerimientos para las herramientas y tipo de automatización deseada
+- Evaluar integración con los componentes y herramientas existentes
+- Considerar posibilidad de desarrollo internos
+- Considerar experiencia y habilidades en el equipo
+- Escoger e integrar una herramienta a la vez
