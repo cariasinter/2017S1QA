@@ -20,8 +20,6 @@ Nota: 24 de 40
 
 # Revisión de pruebas unitarias
 
--
+Nota: 30 de 30
 
-Nota: __ de 40
-
-Nota de etapa 2: _____
+Nota de etapa 2: 74
