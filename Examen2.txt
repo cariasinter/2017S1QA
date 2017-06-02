@@ -1,0 +1,25 @@
+Martes 13 de junio a partir de las 7:30 a.m.
+
+Temas:
+1. Tipos de pruebas y clasificación
+ - Material: ApuntesdDeCurso.md: Tipos de Pruebas, Matriz resumen de tipos de pruebas
+ - Cap. 11. Usability Testing (Patton)
+ - Cap. 13. Testing for software security (Patton)
+ - Cap. 14. Website Testing (Patton)
+ - Cap. 16. Bug bashes and beta testing (Patton)
+  
+2. Automatización en las pruebas
+  - Material: ApuntesdDeCurso.md: Jerarquía de automatización de pruebas en adelante
+  - Cap 15.: Automated Testing and Test Tools
+  
+3. Métricas de calidad en el software
+  - Material: Cap 21 : Software Quality Metrics, Galin
+  - Diapositivas en el repositorio
+  
+4. Administración de la configuración de software
+  - Material: Cap 18 Configuration Management, Galin
+  - Diapositivas en el repositorio
+  
+ 5. Aseguramiento de la Calidad del Software
+  - Material: Cap 21: Software Quality Assurante (Patton)
+  - Diapositivas en el repositorio
