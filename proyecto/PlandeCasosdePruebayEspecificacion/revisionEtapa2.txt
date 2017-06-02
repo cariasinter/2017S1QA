@@ -1,0 +1,27 @@
+# Revisión del documento de Plan de Calidad y Diseño de Pruebas - Etapa 2
+
+- En documentos técnicos/formales todas las secciones deberían estar numeradas: 1. 2., 2.1., 2.1.1., etc
+- Las metas de calidad están planteadas de forma muy genérica. Deberían dar una idea más específica de lo que se percibe como meta para el producto. Por ejemplo: ¿cuáles atributos de calidad del software son más relevantes que otros para este proyecto en específico?
+- En las etapas de pruebas no contemplan las pruebas unitarias
+- En el formato de reporte de defectos debería incluirse los pasos para reproducir el defecto
+- Métricas y estadística a recolectar: falta ser más específico. Por ejemplo, ¿qué es "pruebas realizadas"? ¿Cantidad? ¿Detalle de todas las pruebas realizadas incluyendo fecha y hora de cada prueba? ¿qué es "pruebas exitosas", cantidad o porcentaje de pruebas exitosas?
+- Idealmente, el listado de funcionalidades a ser probadas debería ir en términos de referencias a las funcionalidades del documento de especificación de requerimientos
+- Enfoque de pruebas: ¿qué significa que el enfoque sea "primordialmente de caja blanca"? ¿Cómo se está incorporando este enfoque de caja blanca al listado de casos de prueba?
+
+Nota: 20 de 30
+
+# Revisión de especificación de casos de prueba y procedimientos de prueba
+
+- El formato de casos de prueba es poco claro en PDF (páginas intercaladas). Tiene mucho más sentido entregar el archivo con el que se confeccionaron estos casos de prueba (Excel u otro)
+- No hacen distinción entre casos de prueba versus procedimientos de prueba tal como se solicita en la especificación. Esto es fundamental. (Ver especificación y Patton cap 17 con respecto a esta diferenciación). Esto genera mucha duplicación de los pasos, como se puede verificar en la columna "Pasos" del documento entregado: los ponen en cada caso de prueba, en lugar de ponerlos en el procedimiento de prueba, que es donde deberían estar
+- En los casos de prueba deben especificar los valores exactos a usar como entradas. Por ejemplo: si el genero debe ser M o F o si el tipo de usuario específico debe ser Administrador o Usuario Regular
+
+Nota: 24 de 40
+
+# Revisión de pruebas unitarias
+
+-
+
+Nota: __ de 40
+
+Nota de etapa 2: _____
