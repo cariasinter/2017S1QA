@@ -3,7 +3,7 @@ Delimitación de funcionalidades para la etapa 3:
 - Autenticación en el sistema
 - Registro de usuarios
 - Asociar/desasociar usuarios a gimnasios
-- Publicaciónes
+- Publicaciones
 - Agregar rutina
 - Editar rutina
 - Eliminar rutina

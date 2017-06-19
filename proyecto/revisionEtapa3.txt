@@ -1,0 +1,47 @@
+# Componente: Demo
+Valor sobre nota entrega 3: 20% (10% sobre nota del proyecto)
+
+- Demostración del sistema en ejecución y código completo del software según el alcance definido.
+- El equipo de debe ser capaz de explicar la arquitectura de componentes de la aplicación y las tecnologías seleccionadas para cada nivel.
+
+Nota obtenida (sobre 100):
+Nota ponderada (N / 5)   :
+
+# Componente: Ejecución de pruebas funcionales manuales
+Valor sobre nota entrega 3: 30% (15% sobre nota del proyecto)
+
+- Reporte de resultados de ejecución de casos de prueba diseñádos y especificados en etapa 2, que apliquen al alcance definido, siguiendo un formato definido por el mismo equipo.
+- Completitud en casos de prueba ejecutados
+- Claridad en el reporte de resultados
+- No es necesario que el sistema haya pasado el 100% de las pruebas (se permite que el reporte incluya defectos observados)
+
+Nota obtenida (sobre 100)     :
+Nota ponderada (N * 30 / 100) :
+
+ 
+# Componente: Pruebas funcionales automatizadas
+Valor sobre nota entrega 3: 30% (15% sobre nota del proyecto)
+
+- Automatizar un flujo de ejecución utilizando la biblioteca Selenium o similar, incluyendo el uso de aserciones para verificar de forma automatizada que una funcionalidad es correcta.
+
+- Durante la demostración se podrá modificar el sistema o las entradas para encontrar una ejecución en donde el script automatizado ejecute correctamente en al menos un caso y encuentre errores en otro caso.
+
+Nota obtenida (sobre 100)     :
+Nota ponderada (N * 30 / 100) :
+
+# Componente: Pruebas de carga automatizadas
+Valor sobre nota entrega 3: 20% (10% sobre nota del proyecto)
+
+- Automatizar un flujo de ejecución utilizando la herramienta JMeter o similar. 
+
+- Por medio de esta herramienta se debe ejecutar una prueba de rendimiento en donde el sistema mantenga una carga de 20 usuarios simultáneos por al menos 3 minutos. 
+
+- Al final de la prueba automatizada el equipo debe mostrar gráficos y estadísticas que muestren la carga de usuarios en el tiempo y el tiempo de respuesta promedio, mínimo y máximo de cada solicitud HTTP (request) dentro del flujo de ejecución, así como consolidados.
+
+
+Nota obtenida (sobre 100):
+Nota ponderada (N / 5)   :
+
+
+
+Nota de entrega 3: 
