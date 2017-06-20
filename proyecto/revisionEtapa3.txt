@@ -4,8 +4,12 @@ Valor sobre nota entrega 3: 20% (10% sobre nota del proyecto)
 - Demostración del sistema en ejecución y código completo del software según el alcance definido.
 - El equipo de debe ser capaz de explicar la arquitectura de componentes de la aplicación y las tecnologías seleccionadas para cada nivel.
 
-Nota obtenida (sobre 100):
-Nota ponderada (N / 5)   :
+Observaciones:
+
+- Funcionalidades faltantes: agregar rutinas (definir rutinas, no solo agregarlas a usuario), editar rutina, eliminar rutina.
+
+Nota obtenida (sobre 100): 80
+Nota ponderada (N / 5)   : 16
 
 # Componente: Ejecución de pruebas funcionales manuales
 Valor sobre nota entrega 3: 30% (15% sobre nota del proyecto)
@@ -15,8 +19,12 @@ Valor sobre nota entrega 3: 30% (15% sobre nota del proyecto)
 - Claridad en el reporte de resultados
 - No es necesario que el sistema haya pasado el 100% de las pruebas (se permite que el reporte incluya defectos observados)
 
-Nota obtenida (sobre 100)     :
-Nota ponderada (N * 30 / 100) :
+Observaciones:
+- Para que una prueba sea exitosa, la salida obtenida debe corresponder exactamente con lo indicado en el caso de pruebas. De lo contrario, se debe registrar como fallo para revisar si es un defecto en el código o en la especificación del caso de prueba, hacer la corrección donde corresponde y volver a verificar en pruebas posteriores
+- Considerar automatización (aunque sea en Excel). Por ejemplo: contar las pruebas exitosas y las fallidas por medio de fórmulas, u obtener la descripción, salidas esperadas, etc de casos de pruebas por medio de referencias si los casos de prueba están en otros libros/hojas Excel
+
+Nota obtenida (sobre 100)     : 90
+Nota ponderada (N * 30 / 100) : 27
 
  
 # Componente: Pruebas funcionales automatizadas
@@ -26,8 +34,11 @@ Valor sobre nota entrega 3: 30% (15% sobre nota del proyecto)
 
 - Durante la demostración se podrá modificar el sistema o las entradas para encontrar una ejecución en donde el script automatizado ejecute correctamente en al menos un caso y encuentre errores en otro caso.
 
-Nota obtenida (sobre 100)     :
-Nota ponderada (N * 30 / 100) :
+Observaciones: 
+- Problemas observados en la ejecución del script de Selenium porque el sistema tiene problemas en navegadores diferentes a Chrome y el script desarrollado no es compatible con Chrome
+
+Nota obtenida (sobre 100)     : 90
+Nota ponderada (N * 30 / 100) : 27
 
 # Componente: Pruebas de carga automatizadas
 Valor sobre nota entrega 3: 20% (10% sobre nota del proyecto)
@@ -38,10 +49,14 @@ Valor sobre nota entrega 3: 20% (10% sobre nota del proyecto)
 
 - Al final de la prueba automatizada el equipo debe mostrar gráficos y estadísticas que muestren la carga de usuarios en el tiempo y el tiempo de respuesta promedio, mínimo y máximo de cada solicitud HTTP (request) dentro del flujo de ejecución, así como consolidados.
 
+Observaciones:
 
-Nota obtenida (sobre 100):
-Nota ponderada (N / 5)   :
+- Herramientas utilizadas: Locust y Jmeter, ejecuta prueba de carga. No basada en la especificación (20 usuarios simultáneos por al menos 3 minutos, uso de gráficos)
+- No se muestran/explican gráficos con resultados
+
+Nota obtenida (sobre 100): 90
+Nota ponderada (N / 5)   : 18
 
 
 
-Nota de entrega 3: 
+Nota de entrega 3: 88
